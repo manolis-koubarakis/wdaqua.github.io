@@ -1,0 +1,21 @@
+---
+---
+
+@import 'bootstrap-custom';
+@import 'bootstrap';
+@import 'colours';
+@import 'fonts';
+
+img#logo {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 70%;
+  display: block;
+}
+
+.grid-item-content {
+  padding: $padding-large-horizontal;
+  margin: $padding-large-vertical;
+  background-color: lighten($grey, 30%);
+//  height: 200px;
+}

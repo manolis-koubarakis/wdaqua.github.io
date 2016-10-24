@@ -1,0 +1,16 @@
+---
+defaults:
+  - scope:
+      path: ''
+    values:
+      layout: default
+
+  -
+    scope:
+      type: posts
+      path: blog
+
+    values:
+      layout: blost
+      
+permalink: pretty

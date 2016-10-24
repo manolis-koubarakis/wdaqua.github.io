@@ -1,0 +1,8 @@
+- name: Map
+  url:  /map/
+- name: Blog
+  url:  /blog/
+- name: Results
+  url:  /results/
+- name: Events
+  url:  /events/

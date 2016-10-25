@@ -17,5 +17,18 @@ img#logo {
   padding: $padding-large-horizontal;
   margin: $padding-large-vertical;
   background-color: lighten($grey, 30%);
-//  height: 200px;
+
+  color: $blue;
+  a {
+    color: $blue;
+  }
+
+  a:hover {
+    text-decoration: none;
+    color: darken($blue, 10%);
+  }
+
+  h2 {
+    margin: 0;
+  }
 }

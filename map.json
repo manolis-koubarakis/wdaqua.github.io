@@ -1,0 +1,19 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -0.08331,
+        51.52211
+      ]
+    },
+    "type": "Feature",
+    "properties": {
+      "name": "Emilia Kacprzak",
+      "institution": "Open Data Institute",
+      "url": "http://theodi.org/team/emilia-kacprzak-team"
+    }
+  }]
+}

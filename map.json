@@ -11,9 +11,19 @@
     },
     "type": "Feature",
     "properties": {
-      "name": "Some Student",
       "institution": "Open Data Institute",
-      "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+      "location": "London",
+      "url": "http://theodi.org",
+      "students": [
+        {
+          "name": "Student Zero",
+          "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        },
+        {
+          "name": "Student One",
+          "url": "https://www.youtube.com/watch?v=Sv5iEK-IEzw"
+        }
+      ]
     }
   }]
 }

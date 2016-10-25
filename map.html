@@ -34,7 +34,21 @@
   function onEachFeature(feature, layer) {
   // does this feature have a property named popupContent?
     if (feature.properties) {
-      layer.bindPopup('<a href="' + feature.properties.url + '">' + feature.properties.name + ", " + feature.properties.institution + '</a>');
+      s = '<div class="institution-popup">' +
+          '<a href="' + feature.properties.url + '">' +
+          feature.properties.institution + ', ' + feature.properties.location +
+          '</a>' +
+          '<hr />'
+
+      $.each(feature.properties.students, function(index, student) {
+        s += '<a href="' + student.url + '">' +
+             student.name +
+             '</a>' +
+             '<br />'
+      })
+
+      s += '</div>'
+      layer.bindPopup(s);
     }
   }
 </script>

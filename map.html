@@ -6,10 +6,10 @@
 <script>
   map = L.map('map').setView(
     [
-      51.52211,
-      -0.08331
+      49,
+      11
     ],
-    13
+    4
   );
 
   L.tileLayer('//stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.png', {
@@ -32,13 +32,17 @@
   })
 
   function onEachFeature(feature, layer) {
-  // does this feature have a property named popupContent?
     if (feature.properties) {
       s = '<div class="institution-popup">' +
           '<a href="' + feature.properties.url + '">' +
-          feature.properties.institution + ', ' + feature.properties.location +
-          '</a>' +
-          '<hr />'
+          feature.properties.institution
+
+          if (feature.properties.location) {
+            s += ', ' + feature.properties.location
+          }
+
+      s += '</a>' +
+           '<hr />'
 
       $.each(feature.properties.students, function(index, student) {
         s += '<a href="' + student.url + '">' +

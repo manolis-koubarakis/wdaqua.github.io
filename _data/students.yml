@@ -1,0 +1,79 @@
+---
+type: FeatureCollection
+features:
+- geometry:
+    type: Point
+    coordinates:
+    - -0.08331
+    - 51.52211
+  type: Feature
+  properties:
+    institution: Open Data Institute
+    location: London
+    url: http://theodi.org
+    students:
+    - name: Student Zero
+      url: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+    - name: Student One
+      url: https://www.youtube.com/watch?v=Sv5iEK-IEzw
+
+- geometry:
+    type: Point
+    coordinates:
+    - -1.4227461
+    - 50.9165951
+  type: Feature
+  properties:
+    institution: University of Southampton
+    url: http://www.southampton.ac.uk/
+    students:
+    - name: Bob Fish
+      url: http://www.amazingdarts.com/bobfish.html
+    - name: Cheryl Baker
+      url: https://twitter.com/Cherylbaker
+
+- geometry:
+    type: Point
+    coordinates:
+    - 4.390791
+    - 45.424625
+  type: Feature
+  properties:
+    institution: Université Jean Monnet
+    location: Saint-Étienne
+    url: https://www.univ-st-etienne.fr/fr/index.html
+    students:
+    - name: Eric Cantona
+      url: https://en.wikipedia.org/wiki/Eric_Cantona
+    - name: Vanessa Paradis
+      url: https://en.wikipedia.org/wiki/Vanessa_Paradis
+
+- geometry:
+    type: Point
+    coordinates:
+    - 23.7764984
+    - 37.9682002
+  type: Feature
+  properties:
+    institution: National and Kapodistrian University of Athens
+    url: http://en.uoa.gr/
+    students:
+    - name: Euclid
+      url: https://en.wikipedia.org/wiki/Euclid
+    - name: Helen of Troy
+      url: https://en.wikipedia.org/wiki/Helen_of_Troy
+
+- geometry:
+    type: Point
+    coordinates:
+    - 7.084334
+    - 50.7267749
+  type: Feature
+  properties:
+    institution: University of Bonn
+    url: https://www.uni-bonn.de/
+    students:
+    - name: Tony Kroos
+      url: http://www.toni-kroos.com/de
+    - name: Laura Kampf
+      url: https://www.facebook.com/laurakampfkoeln

@@ -14,6 +14,7 @@
         "institution": "Open Data Institute",
         "location": "London",
         "url": "http://theodi.org",
+        "logo": "odi.svg",
         "students": [
           {
             "name": "Student Zero",
@@ -38,14 +39,15 @@
       "properties": {
         "institution": "University of Southampton",
         "url": "http://www.southampton.ac.uk/",
+        "logo": "odi.svg",
         "students": [
           {
-            "name": "Bob Fish",
-            "url": "http://www.amazingdarts.com/bobfish.html"
+            "name": "Student Two",
+            "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
           },
           {
-            "name": "Cheryl Baker",
-            "url": "https://twitter.com/Cherylbaker"
+            "name": "Student Three",
+            "url": "https://www.youtube.com/watch?v=Sv5iEK-IEzw"
           }
         ]
       }
@@ -63,14 +65,15 @@
         "institution": "Université Jean Monnet",
         "location": "Saint-Étienne",
         "url": "https://www.univ-st-etienne.fr/fr/index.html",
+        "logo": "odi.svg",
         "students": [
           {
-            "name": "Eric Cantona",
-            "url": "https://en.wikipedia.org/wiki/Eric_Cantona"
+            "name": "Student Four",
+            "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
           },
           {
-            "name": "Vanessa Paradis",
-            "url": "https://en.wikipedia.org/wiki/Vanessa_Paradis"
+            "name": "Student Five",
+            "url": "https://www.youtube.com/watch?v=Sv5iEK-IEzw"
           }
         ]
       }
@@ -87,14 +90,15 @@
       "properties": {
         "institution": "National and Kapodistrian University of Athens",
         "url": "http://en.uoa.gr/",
+        "logo": "odi.svg",
         "students": [
           {
-            "name": "Euclid",
-            "url": "https://en.wikipedia.org/wiki/Euclid"
+            "name": "Student Six",
+            "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
           },
           {
-            "name": "Helen of Troy",
-            "url": "https://en.wikipedia.org/wiki/Helen_of_Troy"
+            "name": "Student Seven",
+            "url": "https://www.youtube.com/watch?v=Sv5iEK-IEzw"
           }
         ]
       }
@@ -111,14 +115,15 @@
       "properties": {
         "institution": "University of Bonn",
         "url": "https://www.uni-bonn.de/",
+        "logo": "odi.svg",
         "students": [
           {
-            "name": "Tony Kroos",
-            "url": "http://www.toni-kroos.com/de"
+            "name": "Student Eight",
+            "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
           },
           {
-            "name": "Laura Kampf",
-            "url": "https://www.facebook.com/laurakampfkoeln"
+            "name": "Student Nine",
+            "url": "https://www.youtube.com/watch?v=Sv5iEK-IEzw"
           }
         ]
       }

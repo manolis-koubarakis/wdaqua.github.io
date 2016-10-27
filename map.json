@@ -14,7 +14,21 @@
         "institution": "Open Data Institute",
         "location": "London",
         "url": "http://theodi.org",
-        "logo": "odi.svg",
+        "logo": {
+          "path": "odi.svg",
+          "size": [
+            40,
+            40
+          ],
+          "anchor": [
+            0,
+            20
+          ],
+          "popup": [
+            20,
+            -20
+          ]
+        },
         "students": [
           {
             "name": "Student Zero",
@@ -39,7 +53,21 @@
       "properties": {
         "institution": "University of Southampton",
         "url": "http://www.southampton.ac.uk/",
-        "logo": "odi.svg",
+        "logo": {
+          "path": "soton.png",
+          "size": [
+            100,
+            50
+          ],
+          "anchor": [
+            75,
+            25
+          ],
+          "popup": [
+            -25,
+            -20
+          ]
+        },
         "students": [
           {
             "name": "Student Two",
@@ -65,7 +93,21 @@
         "institution": "Université Jean Monnet",
         "location": "Saint-Étienne",
         "url": "https://www.univ-st-etienne.fr/fr/index.html",
-        "logo": "odi.svg",
+        "logo": {
+          "path": "st-etienne.png",
+          "size": [
+            100,
+            50
+          ],
+          "anchor": [
+            75,
+            25
+          ],
+          "popup": [
+            -25,
+            -20
+          ]
+        },
         "students": [
           {
             "name": "Student Four",
@@ -90,7 +132,21 @@
       "properties": {
         "institution": "National and Kapodistrian University of Athens",
         "url": "http://en.uoa.gr/",
-        "logo": "odi.svg",
+        "logo": {
+          "path": "athens.png",
+          "size": [
+            160,
+            50
+          ],
+          "anchor": [
+            0,
+            50
+          ],
+          "popup": [
+            80,
+            -50
+          ]
+        },
         "students": [
           {
             "name": "Student Six",
@@ -115,7 +171,21 @@
       "properties": {
         "institution": "University of Bonn",
         "url": "https://www.uni-bonn.de/",
-        "logo": "odi.svg",
+        "logo": {
+          "path": "bonn.png",
+          "size": [
+            100,
+            50
+          ],
+          "anchor": [
+            0,
+            20
+          ],
+          "popup": [
+            50,
+            -20
+          ]
+        },
         "students": [
           {
             "name": "Student Eight",

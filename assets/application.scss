@@ -50,3 +50,9 @@ img#logo {
     border-color: $grey;
   }
 }
+
+.leaflet-marker-pane {
+  img {
+    background-color: transparentize($grey, 0.7);
+  }
+}

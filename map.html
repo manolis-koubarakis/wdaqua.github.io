@@ -27,19 +27,20 @@
 
   $.getJSON('{{ site.baseurl }}/map.json', function(data) {
     L.geoJson(data, {
-      pointToLayer: function(feature, latlng) {
-       var smallIcon = L.icon({
-                      iconSize: [27, 27],
-                      iconAnchor: [13, 27],
-                      popupAnchor:  [1, -24],
-                      iconUrl: '{{ site.baseurl }}/assets/images/' + feature.properties.logo
-      });
-
-      return L.marker(latlng, {icon: smallIcon});
-    },
+      pointToLayer: pointToLayer,
       onEachFeature: onEachFeature
     }).addTo(map)
   })
+
+  function pointToLayer(feature, latlng) {
+    smallIcon = L.icon({
+                  iconSize: feature.properties.logo.size,
+                  iconAnchor: feature.properties.logo.anchor,
+                  popupAnchor:  feature.properties.logo.popup,
+                  iconUrl: '{{ site.baseurl }}/assets/images/logos/' + feature.properties.logo.path
+   })
+   return L.marker(latlng, { icon: smallIcon });
+  }
 
   function onEachFeature(feature, layer) {
     if (feature.properties) {
@@ -65,13 +66,4 @@
       layer.bindPopup(s);
     }
   }
-
-  odiIcon = L.icon({
-    iconUrl: '{{ site.baseurl }}/assets/images/odi.svg',
-
-    iconSize: [50, 50],
-    iconAnchor: [0, 0]
-  })
-
-  //L.marker([51.52211, -0.08331], {icon: odiIcon}).addTo(map)
 </script>

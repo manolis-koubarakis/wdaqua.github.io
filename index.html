@@ -9,14 +9,12 @@
     {% for blost in site.categories.blog %}
       <div class='col-xs-12 col-sm-12 col-md-4 grid-item'>
         <div class='grid-item-content story'>
-          <a href='{{ site.baseurl }}{{ blost.url }}'>
-            <h2 class='module-heading'>
-              {{ blost.title }}
-            </h2>
-            <p class='module-subheading'>
-              {{ blost.excerpt }}
-            </p>
-          </a>
+          <h2 class='module-heading'>
+            {{ blost.title }}
+          </h2>
+          <p class='module-subheading'>
+            {{ blost.excerpt }}
+          </p>
         </div>
       </div>
     {% endfor %}

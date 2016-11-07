@@ -1,4 +1,53 @@
 ---
 ---
 
-<h1>WDAqua</h1>
+<h1>WDAqua news</h1>
+
+<div class='container-fluid'>
+  <div class='grid'>
+    <div class='grid-sizer col-xs-6 col-sm-6 col-md-1'></div>
+    {% for blost in site.categories.blog %}
+      <div class='col-xs-12 col-sm-12 col-md-4 grid-item'>
+        <div class='grid-item-content story'>
+          <a href='{{ site.baseurl }}{{ blost.url }}'>
+            <h2 class='module-heading'>
+              {{ blost.title }}
+            </h2>
+            <p class='module-subheading'>
+              {{ blost.excerpt }}
+            </p>
+          </a>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+<script>
+$('.grid').masonry({
+  itemSelector: '.grid-item',
+  columnWidth: '.grid-sizer',
+  percentPosition: true,
+  stagger: 30
+})
+
+colours = [
+  'rgba(255,  0,  0,1)',
+  'rgba(197,  0,  0,1)',
+  'rgba(155,  0,  0,1)',
+
+  'rgba( 16, 75,169,1)',
+  'rgba( 11, 57,130,1)',
+  'rgba(  7, 44,102,1)',
+
+  'rgba(  0,204,  0,1)',
+  'rgba(  0,158,  0,1)',
+  'rgba(  0,124,  0,1)'
+]
+
+count = 0
+limit = colours.length
+$('.story').each(function(i, story) {
+  $(this).attr('style', 'background-color: ' + colours[(count += 3) % limit])
+})
+</script>

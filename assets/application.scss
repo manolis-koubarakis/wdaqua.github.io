@@ -6,6 +6,11 @@
 @import 'colours';
 @import 'fonts';
 
+body {
+  font-family: $font-primary;
+  word-spacing: 1ch;
+}
+
 img#logo {
   margin-left: auto;
   margin-right: auto;

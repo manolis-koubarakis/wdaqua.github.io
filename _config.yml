@@ -14,4 +14,4 @@ defaults:
       layout: blost
 
 permalink: pretty
-baseurl: /wdaqua
+# baseurl: https://wdaqua.github.io

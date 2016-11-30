@@ -1,6 +1,53 @@
 ---
 ---
 
-# Results
+<h1>Results</h1>
 
-Can we get a lillyprinter?
+<div class='row'>
+  <div id='radar' class='viz col-md-4'></div>
+  <div id='bubbles' class='viz col-md-4'></div>
+</div>
+
+<script>
+  var radar_data = [
+    {"name": "alpha", "skill": "apple", "value": random(8)},
+    {"name": "alpha", "skill": "orange", "value": random(8)},
+    {"name": "alpha", "skill": "banana", "value": random(8)},
+    {"name": "beta", "skill": "apple", "value": random(8)},
+    {"name": "beta", "skill": "orange", "value": random(8)},
+    {"name": "beta", "skill": "banana", "value": random(8)}
+  ];
+
+  var visualization = d3plus.viz()
+    .container("#radar")
+    .data(radar_data)
+    .id(["name", "skill"])
+    .size("value")
+    .type("radar")
+    .draw();
+
+  /////////////////
+
+    var bubble_data = [
+    {"value": random(100), "name": "apple", "group": "Strange"},
+    {"value": random(100), "name": "orange", "group": "Charmed"},
+    {"value": random(100), "name": "banana", "group": "Charmed"},
+    {"value": random(100), "name": "pear", "group": "Charmed"},
+    {"value": random(100), "name": "melon", "group": "Strange"},
+    {"value": random(100), "name": "kiwi", "group": "Strange"}
+  ]
+  // instantiate d3plus
+  var visualization = d3plus.viz()
+    .container("#bubbles") // container DIV to hold the visualization
+    .data(bubble_data)     // data to use with the visualization
+    .type("bubbles")       // visualization type
+    .id(["group", "name"]) // nesting keys
+    .depth(1)              // 0-based depth
+    .size("value")         // key name to size bubbles
+    .color("group")        // color by each group
+    .draw()                // finally, draw the visualization!
+
+  function random(limit) {
+    return Math.floor( Math.random() * limit )
+  }
+</script>

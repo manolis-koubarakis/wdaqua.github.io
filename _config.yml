@@ -12,5 +12,6 @@ defaults:
 
     values:
       layout: blost
-      
+
 permalink: pretty
+baseurl: /wdaqua

@@ -1,22 +1,20 @@
 ---
 ---
 
-<h1>Events</h1>
+<h1>WDAqua news</h1>
 
 <div class='container-fluid'>
   <div class='grid'>
     <div class='grid-sizer col-xs-6 col-sm-6 col-md-1'></div>
     {% for blost in site.categories.blog %}
-      <div class='col-xs-12 col-sm-12 col-md-12 grid-item'>
+      <div class='col-xs-12 col-sm-12 col-md-4 grid-item'>
         <div class='grid-item-content story'>
-          <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'>
-            <h2 class='module-heading'>
-              {{ blost.title }}
-            </h2>
-            <h3>
-              {{ blost.date | date: '%Y-%m-%d'}}
-            </h3>
-          </a>
+          <h2 class='module-heading'>
+            {{ blost.title }}
+          </h2>
+          <p class='module-subheading'>
+            {{ blost.excerpt }}
+          </p>
         </div>
       </div>
     {% endfor %}

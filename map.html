@@ -1,4 +1,69 @@
 ---
 ---
 
-# Map and ting
+<div id='map' class='map'></div>
+
+<script>
+  map = L.map('map').setView(
+    [
+      49,
+      11
+    ],
+    4
+  );
+
+  L.tileLayer('//stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.png', {
+    subdomains: 'abcd',
+    minZoom: 1,
+    maxZoom: 20,
+  }).addTo(map)
+
+  L.tileLayer('//stamen-tiles-{s}.a.ssl.fastly.net/toner-labels/{z}/{x}/{y}.png', {
+    attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> | Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    subdomains: 'abcd',
+    minZoom: 1,
+    maxZoom: 20
+  }).addTo(map)
+
+  $.getJSON('{{ site.baseurl }}/map.json', function(data) {
+    L.geoJson(data, {
+      pointToLayer: pointToLayer,
+      onEachFeature: onEachFeature
+    }).addTo(map)
+  })
+
+  function pointToLayer(feature, latlng) {
+    smallIcon = L.icon({
+                  iconSize: feature.properties.logo.size,
+                  iconAnchor: feature.properties.logo.anchor,
+                  popupAnchor:  feature.properties.logo.popup,
+                  iconUrl: '{{ site.baseurl }}/assets/images/logos/' + feature.properties.logo.path
+   })
+   return L.marker(latlng, { icon: smallIcon });
+  }
+
+  function onEachFeature(feature, layer) {
+    if (feature.properties) {
+      s = '<div class="institution-popup">' +
+          '<a href="' + feature.properties.url + '">' +
+          feature.properties.institution
+
+          if (feature.properties.location) {
+            s += ', ' + feature.properties.location
+          }
+
+      s += '</a>' +
+           '<hr />'
+
+      $.each(feature.properties.students, function(index, student) {
+        s += '<a href="' + student.url + '">' +
+             student.name +
+             '</a>' +
+             '<br />'
+      })
+
+      s += '</div>'
+      layer.bindPopup(s);
+    }
+  }
+</script>

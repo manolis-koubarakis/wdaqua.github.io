@@ -30,22 +30,14 @@ $('.grid').masonry({
 })
 
 colours = [
-  'rgba(255,  0,  0,1)',
-  'rgba(197,  0,  0,1)',
-  'rgba(155,  0,  0,1)',
-
-  'rgba( 16, 75,169,1)',
-  'rgba( 11, 57,130,1)',
-  'rgba(  7, 44,102,1)',
-
-  'rgba(  0,204,  0,1)',
-  'rgba(  0,158,  0,1)',
-  'rgba(  0,124,  0,1)'
+  'rgba(0, 24, 153,1)',
+  'rgba(223, 159, 0,1)',
+  'rgba(223, 116, 0,1)'
 ]
 
 count = 0
 limit = colours.length
 $('.story').each(function(i, story) {
-  $(this).attr('style', 'background-color: ' + colours[(count += 3) % limit])
+  $(this).attr('style', 'background-color: ' + colours[count++ % limit])
 })
 </script>

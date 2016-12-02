@@ -1,11 +1,4 @@
 $brand-primary: $color-primary-0;
-
-footer {
-  margin: 2em 0;
-  padding: 2em 0;
-  border-top: 10px $brand-primary solid;
-}
-
-footer .logo {
-  width: 100%;
-}
+$navbar-default-link-hover-bg: $color-secondary-2-0;
+$navbar-default-link-active-color: white;
+$navbar-default-link-active-bg: $color-primary-0;

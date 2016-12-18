@@ -2,17 +2,17 @@
 <html lang='en'>
   <head>
     {% include head.html %}
-    <script src="//unpkg.com/masonry-layout@4.1/dist/masonry.pkgd.min.js"></script>
-
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.1/leaflet.css" />
-    <script src="//cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.1/leaflet.js"></script>
-
-    <script src="//d3plus.org/js/d3.js"></script>
-    <script src="//d3plus.org/js/d3plus.js"></script>
+    {{ page.head }}
   </head>
 
-  <body>
-    {% include header.html %}
+  <body class="{{ page.layout }}">
+    {% if (page.url == "/") %}
+      <header>
+        <img src='{{ site.baseurl }}/assets/images/students.jpg' id='students' title='WDAqua students'>
+        <img src='{{ site.baseurl }}/assets/images/wdaqua.png' id='logo' title='WDAqua'>
+      </header>
+    {% endif %}
+    {% include nav.html %}
     <div class='container'>
       {{ content }}
     </div>

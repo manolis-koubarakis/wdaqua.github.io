@@ -10,10 +10,6 @@ body {
   font-family: $font-primary;
 }
 
-h1, h2, h3 {
-  text-align: center;
-}
-
 header {
   position: relative;
 }
@@ -62,6 +58,56 @@ footer .logo {
   h2 {
     margin: 0;
   }
+
+  .module-img {
+    width: 100px;
+  	height: 100px;
+    position: absolute;
+    top: -30px;
+    left: 0px;
+  	border: 3px solid $blue;
+  	border-radius: 50px;
+  	-webkit-border-radius: 50px;
+  	-moz-border-radius: 50px;
+    overflow: hidden;
+    text-align: center;
+
+    img {
+      width: 100px;
+    }
+  }
+
+  .module-heading {
+    margin-left: 60px;
+  }
+}
+
+.student {
+  .page-header {
+    position: relative;
+
+    h1, h2 {
+      margin-left: 125px;
+    }
+
+    .image  {
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      top: -7px;
+      left: 0px;
+      border: 3px solid $blue;
+      border-radius: 50px;
+      -webkit-border-radius: 50px;
+      -moz-border-radius: 50px;
+      overflow: hidden;
+      text-align: center;
+
+      img {
+        width: 100px;
+      }
+    }
+  }
 }
 
 .map, .viz {
@@ -96,9 +142,5 @@ footer .logo {
 .story {
   h2, p {
     color: white;
-  }
-
-  p {
-    text-align: justify;
   }
 }

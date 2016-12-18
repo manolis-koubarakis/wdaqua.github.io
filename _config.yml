@@ -5,13 +5,15 @@ defaults:
     values:
       layout: default
 
-  -
-    scope:
+  - scope:
       type: posts
       path: blog
-
     values:
       layout: blost
 
 permalink: pretty
 # baseurl: https://wdaqua.github.io
+
+collections:
+  students:
+    output: true

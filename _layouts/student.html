@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<div class="page-header">
+  <div class="image">
+    <img src="{{site.baseurl}}/assets/images/students/{{page.image}}">
+  </div>
+  <h1>ESR{{page.esr}}: {{ page.title }}</h1>
+  <h2>{{ page.project }}</h2>
+</div>
+
+{{ content }}
+
+<dl>
+  <dt>Supervisors:</dt>
+  <dd>
+    <ul>
+      {% for supervisor in page.supervisors %}
+        <li><a href="{{site.baseurl}}/supervisors/{{supervisor}}.html">{{ supervisor }}</a></li>
+      {% endfor %}
+    </ul>
+  </dd>
+</dl>

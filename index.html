@@ -1,5 +1,6 @@
 ---
-layout: home
+layout: default
+head: <script src="//unpkg.com/masonry-layout@4.1/dist/masonry.pkgd.min.js"></script>
 ---
 
 <div class="page-header">
@@ -11,14 +12,17 @@ layout: home
 <div class='container-fluid'>
   <div class='grid'>
     <div class='grid-sizer col-xs-6 col-sm-6 col-md-1'></div>
-    {% for blost in site.categories.blog %}
+    {% for student in site.students %}
       <div class='col-xs-12 col-sm-12 col-md-4 grid-item'>
         <div class='grid-item-content story'>
+          <div class="module-img">
+            <img src="{{site.baseurl}}/assets/images/students/{{student.image}}">
+          </div>
           <h2 class='module-heading'>
-            {{ blost.title }}
+            <a href="{{student.url}}">{{ student.title }}</a>
           </h2>
           <p class='module-subheading'>
-            {{ blost.excerpt }}
+            {{ student.content }}
           </p>
         </div>
       </div>

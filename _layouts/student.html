@@ -2,23 +2,37 @@
 layout: default
 ---
 
-<div class="page-header">
-  <div class="image">
-    <img src="{{site.baseurl}}/assets/images/students/{{page.image}}">
+<div class="page-header row">
+  <div class="col-sm-3 col-md-2">
+    <div class="image">
+      <img src="{{site.baseurl}}/assets/images/students/{{page.image}}">
+    </div>
   </div>
-  <h1>ESR{{page.esr}}: {{ page.title }}</h1>
-  <h2>{{ page.project }}</h2>
+  <div class="col-sm-9 col-md-10">
+    <h1>ESR{{page.esr}}: {{ page.title }}</h1>
+    <h2>{{ page.project }}</h2>
+  </div>
 </div>
 
-{{ content }}
-
-<dl>
-  <dt>Supervisors:</dt>
-  <dd>
-    <ul>
-      {% for supervisor in page.supervisors %}
-        <li><a href="{{site.baseurl}}/supervisors/{{supervisor}}.html">{{ supervisor }}</a></li>
-      {% endfor %}
-    </ul>
-  </dd>
-</dl>
+<div class="row">
+  <div class="col-md-8">
+    {{ content }}
+  </div>
+  <div class="col-xs-8 col-md-2">
+    <dl>
+      <dt>Started:</dt>
+      <dd>{{ page.start-date }}</dd>
+      <dt>Supervisors:</dt>
+      <dd>
+        <ul class="list-unstyled">
+          {% for supervisor in page.supervisors %}
+            <li><a href="{{site.baseurl}}/supervisors/{{supervisor}}.html">{{ supervisor }}</a></li>
+          {% endfor %}
+        </ul>
+      </dd>
+    </dl>
+  </div>
+  <div class="col-xs-4 col-md-2">
+    <img src="{{site.baseurl}}/assets/images/logos/{{page.host}}.png">
+  </div>
+</div>

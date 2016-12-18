@@ -1,13 +1,13 @@
 ---
 layout: student
-title: Laura Koesten
 esr: 15
-beneficiary: odi
+title: Laura Koesten
 project: Human-data interaction challenges in Question Answering
-start-date: 2015-11-02
+image: LauraKoesten.jpg
+host: odi
 supervisors:
   - Jeni Tennison
   - Elena Simperl
-image: LauraKoesten.jpg
+start-date: 2015-11-02
 ---
 Despite its abundance and variety of applications, we know very little about how people find data, understand it, and put it to use. This work aims to inform the design of data tools and technologies from a user centred perspective. We want to support people in finding, selecting and understanding data relevant for their respective tasks. Therefore we need a better understanding of how people are interacting with data. In our initial study we focus on the processes of how people engage with structured data; which is available on data portals and present directions for further research.

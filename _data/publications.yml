@@ -1,0 +1,68 @@
+---
+Piscopo2017:
+  year: 2017
+  citation: "Wikidatians Are Born: Paths to Full Participation in a Collaborative Structured Knowledge Base. Alessandro Piscopo, Christopher Phethean, Elena Simperl. HICSS-50. 2017 (to appear)"
+Singh2016a:
+  year: 2016
+  citation: "Towards a Message-Driven Vocabulary for Promoting the Interoperability of Question Answering Systems. Kuldeep Singh, Andreas Both, Dennis Diefenbach, Saeedeh Shekarpour. IEEE ICSC 2016. URL PDF"
+  url: http://ieeexplore.ieee.org/xpl/freeabs_all.jsp?arnumber=7439371&abstractAccess=no&userType=inst
+  pdf: http://wdaqua.eu/wp-content/uploads/PID4045687.pdf
+Both2016:
+  year: 2016
+  citation: "Qanary –  A Methodology for Vocabulary-driven Open Question Answering Systems. Andreas Both, Dennis Diefenbach, Kuldeep Singh, Saedeeh Shekarpour, Didier Cherix, Christoph Lange. ESWC 2016."
+  url: http://link.springer.com/chapter/10.1007%2F978-3-319-34129-3_38
+  pdf: http://wdaqua.informatik.uni-bonn.de/wp-content/uploads/2015_12___Extendible_Vocabulary_for_Question_Answering_Systems.pdf
+Thakkar2016:
+  year: 2016
+  citation: "Are Linked Datasets fit for Open-domain Question Answering? A Quality Assessment. Harsh Thakkar, Kemele M. Endris, Jose M. Gimenez-Garcia, Jeremy Debattista, Christoph Lange, Sören Auer. WIMS 2016."
+  url: http://dl.acm.org/citation.cfm?id=2912857
+  pdf: http://wdaqua.informatik.uni-bonn.de/wp-content/uploads/wims2016.pdf
+Diefenbach2016a:
+  year: 2016
+  citation: "A Scalable Approach for Computing Semantic Relatedness using Semantic Web Data. Dennis Diefenbach, Ricardo Usbeck, Kamal Singh, Pierre Maret. WIMS 2016."
+  url: http://dl.acm.org/citation.cfm?id=2912864
+Garica2016:
+  year: 2016
+  citation: "Ranking the Web of Data. Jose M. Garica, Harsh Thakkar, and Antoine Zimmermann. PROFILES 2016 Workshop. (2016)."
+  pdf: http://harshthakkar.in/wp-content/uploads/2016/03/ranking-web-data.pdf
+Shekarpour2016:
+  year: 2016
+  citation: "Question Answering on Linked Data: Challenges and Future Directions. Saeedeh Shekarpour, Denis Lukovnikov, Ashwini Jaya Kumar, Kemele Endris, Kuldeep Singh, Harsh Thakkar, Christoph Lange. Q4APS at WWW 2016."
+  pdf: http://wdaqua.informatik.uni-bonn.de/wp-content/uploads/paper.pdf
+Singh2016b:
+  year: 2016
+  citation: "Qanary –  the Fast Track to Creating a Question Answering System with Linked Data Technology . Kuldeep Singh, Andreas Both, Dennis Diefenbach, Saedeeh Shekarpour, Didier Cherix, Christoph Lange. ESWC Poster&Demo 2016."
+  pdf: http://wdaqua.informatik.uni-bonn.de/wp-content/uploads/DemoPaper___ESWC_2016.pdf
+Diefenbach2016b:
+  year: 2016
+  citation: "A Scalable Approach for Computing Semantic Relatedness using Semantic Web Data. Dennis Diefenbach, Ricardo Usbeck, Kamal Singh, Pierre Maret. 6th International Conference on Web Intelligence, Mining and Semantics (WIMS) 2016."
+  pdf: http://wdaqua.eu/wp-content/uploads/WIMS-4.pdf
+Kumar2016:
+  year: 2016
+  citation: "A Knowledge Graph Based Speech Interface For Question Answering Systems. Ashwini Jaya Kumar, Christoph Schmidt, Joachim Koehler. Speech Communication, Elsevier (Under Revision)."
+Lytra2016:
+  year: 2016
+  citation: "WDAqua: Answering Questions using Web Data. Ioanna Lytra, Maria-Esther Vidal, Christoph Lange, Sören Auer and Elena Demidova. 13th ESWC 2016, EU Project Networking session."
+  pdf: http://wdaqua.eu/wp-content/uploads/WDAqua_EU_NW_ESWC16.pdf
+Diefenbach2016c:
+  year: 2016
+  citation: "Computing the Semantic Relatedness of Music Genre using Semantic Web Data. Dennis Diefenbach, Pierre-René Lhérisson, Fabrice Muhlenbach, Pierre Maret. SEMANTICS Poster&Demo 2016."
+  pdf: http://wdaqua.eu/wp-content/uploads/Poster_paper_Semantics__16-3-11.pdf
+Mrabet2016:
+  year: 2016
+  citation: "Aligning Texts and Knowledge Bases with Semantic Sentence Simplification. Yassine Mrabet, Pavlos Vougiouklis, Halil Kilicoglu, Claire Gardent, Dina Demner-Fushman, Jonathon Hare, and Elena Simperl. 2nd International Workshop on Natural Language Generation and the Semantic Web (WebNLG) 2016."
+  pdf: https://webnlg2016.sciencesconf.org/data/pages/06.pdf
+Vougiouklis2016:
+  year: 2016
+  citation: "A Neural Network Approach for Knowledge-Driven Response Generation. Pavlos Vougiouklis, Jonathon Hare, and Elena Simperl. 26th International Conference on Computational Linguistics (COLING) 2016."
+GimenezGarcia2016:
+  year: 2016
+  citation: "Representing Contextual Information as Fluents. José M. Giménez-García, Antoine Zimmermann and Pierre Maret. Poster Paper. EKAW 2016."
+Koesten2016:
+  year: 2016
+  citation: "Learning when searching for web data. Laura Koesten, Emilia Kacprzak, Jenifer Tennison. Search as Learning (SAL) workshop @SIGIR 2016."
+Lange2015:
+  year: 2015
+  citation: "The WDAqua ITN – Answering Questions using Web Data. Christoph Lange, Saeedeh Shekarpour and Sören Auer. 12th ESWC 2015, EU Project Networking session."
+  pdf: http://arxiv.org/pdf/1506.04094v1.pdf
+  poster: http://eis.iai.uni-bonn.de/upload/paper/ESWC_Project_Networking_WDAqua_poster.pdf

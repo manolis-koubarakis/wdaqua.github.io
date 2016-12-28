@@ -17,6 +17,24 @@ layout: default
 <div class="row">
   <div class="col-md-8">
     {{ content }}
+    {% if page.publications %}
+      <h2>Publications</h2>
+      {% for publication in page.publications %}
+        {% assign pub = site.data.publications[publication] %}
+        <p>
+          {{ pub.citation }}
+          {% if pub.url %}
+            <a href="{{pub.url}}">URL</a>
+          {% endif %}
+          {% if pub.pdf %}
+            <a href="{{pub.pdf}}">PDF</a>
+          {% endif %}
+          {% if pub.poster %}
+            (<a href="{{pub.poster}}">poster</a>)
+          {% endif %}
+        </p>
+      {% endfor %}
+    {% endif %}
   </div>
   <div class="col-xs-8 col-md-2">
     <dl>
@@ -26,7 +44,7 @@ layout: default
       <dd>
         <ul class="list-unstyled">
           {% for supervisor in page.supervisors %}
-            <li><a href="{{site.baseurl}}/supervisors/{{supervisor}}.html">{{ supervisor }}</a></li>
+            <li><a href="{{site.baseurl}}/supervisors/{{ supervisor | slugify }}.html">{{ supervisor }}</a></li>
           {% endfor %}
         </ul>
       </dd>

@@ -3,7 +3,6 @@ redirect_from:
   - /supervisors-and-students/
   - /advisors/
 layout: default
-head: <script src="//unpkg.com/masonry-layout@4.1/dist/masonry.pkgd.min.js"></script>
 ---
 
 <div class="page-header">
@@ -12,21 +11,14 @@ head: <script src="//unpkg.com/masonry-layout@4.1/dist/masonry.pkgd.min.js"></sc
 
 <div class='container-fluid'>
   <h2>Students</h2>
-  <div class='grid'>
-    <div class='grid-sizer col-xs-6 col-sm-6 col-md-1'></div>
+  <div class='row'>
     {% for student in site.students %}
-      <div class='col-xs-12 col-sm-12 col-md-4 grid-item'>
-        <div class='grid-item-content story'>
-          <div class="module-img">
-            <img src="{{site.baseurl}}/assets/images/students/{{student.image}}">
-          </div>
-          <h2 class='module-heading'>
-            <a href="{{student.url}}">{{ student.title }}</a>
-          </h2>
-          <p class='module-subheading'>
-            {{ student.content }}
-          </p>
-        </div>
+      <div class="col-lg-4 col-sm-6 text-center">
+        <a href="{{student.url}}">
+          <img class="img-circle img-responsive img-center" src="{{site.baseurl}}/assets/images/students/{{student.image}}" alt="">
+          <h3>{{ student.name }}</h3>
+          <p>{{ student.project }}</p>
+        </a>
       </div>
     {% endfor %}
   </div>
@@ -34,21 +26,14 @@ head: <script src="//unpkg.com/masonry-layout@4.1/dist/masonry.pkgd.min.js"></sc
 
 <div class='container-fluid'>
   <h2>Supervisors</h2>
-  <div class='grid'>
-    <div class='grid-sizer col-xs-6 col-sm-6 col-md-1'></div>
+  <div class='row'>
     {% for supervisor in site.supervisors %}
-      <div class='col-xs-12 col-sm-12 col-md-4 grid-item'>
-        <div class='grid-item-content story'>
-          <div class="module-img">
-            <img src="{{site.baseurl}}/assets/images/students/{{supervisor.image}}">
-          </div>
-          <h2 class='module-heading'>
-            <a href="{{supervisor.url}}">{{ supervisor.title }}</a>
-          </h2>
-          <p class='module-subheading'>
-            {{ supervisor.content }}
-          </p>
-        </div>
+      <div class="col-lg-4 col-sm-6 text-center">
+        <a href="{{supervisor.url}}">
+          <img class="img-circle img-responsive img-center" src="{{site.baseurl}}/assets/images/supervisors/{{supervisor.image}}" alt="">
+          <h3>{{ supervisor.name }}</h3>
+          <p>{{ supervisor.role }}</p>
+        </a>
       </div>
     {% endfor %}
   </div>
@@ -56,43 +41,15 @@ head: <script src="//unpkg.com/masonry-layout@4.1/dist/masonry.pkgd.min.js"></sc
 
 <div class='container-fluid'>
   <h2>Advisors</h2>
-  <div class='grid'>
-    <div class='grid-sizer col-xs-6 col-sm-6 col-md-1'></div>
+  <div class='row'>
     {% for advisor in site.advisors %}
-      <div class='col-xs-12 col-sm-12 col-md-4 grid-item'>
-        <div class='grid-item-content story'>
-          <div class="module-img">
-            <img src="{{site.baseurl}}/assets/images/students/{{advisor.image}}">
-          </div>
-          <h2 class='module-heading'>
-            <a href="{{advisor.url}}">{{ advisor.title }}</a>
-          </h2>
-          <p class='module-subheading'>
-            {{ advisor.content }}
-          </p>
-        </div>
+      <div class="col-lg-4 col-sm-6 text-center">
+        <a href="{{advisor.url}}">
+          <img class="img-circle img-responsive img-center" src="{{site.baseurl}}/assets/images/advisors/{{advisor.image}}" alt="">
+          <h3>{{ advisor.name }}</h3>
+          <p>{{ advisor.role }}</p>
+        </a>
       </div>
     {% endfor %}
   </div>
 </div>
-
-<script>
-$('.grid').masonry({
-  itemSelector: '.grid-item',
-  columnWidth: '.grid-sizer',
-  percentPosition: true,
-  stagger: 30
-})
-
-colours = [
-  'rgba(0, 24, 153,1)',
-  'rgba(223, 159, 0,1)',
-  'rgba(223, 116, 0,1)'
-]
-
-count = 0
-limit = colours.length
-$('.story').each(function(i, story) {
-  $(this).attr('style', 'background-color: ' + colours[count++ % limit])
-})
-</script>

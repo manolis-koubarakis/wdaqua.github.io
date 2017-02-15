@@ -1,7 +1,7 @@
 ---
 layout: student
 esr: 15
-title: Laura Koesten
+name: Laura Koesten
 project: Human-data interaction challenges in Question Answering
 image: LauraKoesten.jpg
 host: odi

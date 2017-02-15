@@ -30,6 +30,7 @@ footer {
   margin: 2em 0;
   padding: 2em 0;
   border-top: 10px $brand-primary solid;
+  font-size: $font-size-small;
 }
 
 footer .logo {
@@ -38,6 +39,14 @@ footer .logo {
 
 .navbar-brand img {
   height: 100%;
+}
+
+.img-center {
+	margin: 0 auto;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 .grid {
@@ -84,30 +93,6 @@ footer .logo {
   .module-heading {
     margin-left: 60px;
   }
-}
-
-.student {
-  .page-header {
-    position: relative;
-
-    .image  {
-      width: 150px;
-      height: 150px;
-      border: 3px solid $blue;
-      border-radius: 75px;
-      -webkit-border-radius: 75px;
-      -moz-border-radius: 75px;
-      overflow: hidden;
-      text-align: center;
-      margin-left: auto;
-      margin-right: auto;
-
-      img {
-        width: 150px;
-      }
-    }
-  }
-
 }
 
 .map, .viz {

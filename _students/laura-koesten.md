@@ -9,6 +9,10 @@ supervisors:
   - Jeni Tennison
   - Elena Simperl
 start-date: 2015-11-02
+homepage: http://theodi.org/team/laura-koesten
+email: laura.koesten@theodi.org
+twitter: laurakoesten
+github: laurakoesten
 publications:
   - Koesten2016
 ---

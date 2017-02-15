@@ -1,4 +1,7 @@
 ---
+gems:
+  - jekyll-redirect-from
+
 defaults:
   - scope:
       path: ''
@@ -16,4 +19,8 @@ permalink: pretty
 
 collections:
   students:
+    output: true
+  supervisors:
+    output: true
+  advisors:
     output: true

@@ -1,8 +1,12 @@
-- name: Map
-  url:  /map/
-- name: Blog
-  url:  /blog/
-- name: Results
-  url:  /results/
+- name: People
+  url:  /people/
+- name: Our work
+  url:  /our-work/
+- name: Partners
+  url:  /partners/
 - name: Events
   url:  /events/
+- name: Contact us
+  url:  /contact-us/
+- name: News
+  url:  /news/

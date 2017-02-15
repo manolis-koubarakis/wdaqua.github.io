@@ -1,21 +1,27 @@
 ---
 redirect_from:
   - /supervisors-and-students/
+  - /advisory-board/
   - /advisors/
+  - /students/
+  - /supervisors/
 layout: default
 ---
 
 <div class="page-header">
-  <h1>People</h1>
+  <h1>Students</h1>
 </div>
 
 <div class='container-fluid'>
-  <h2>Students</h2>
   <div class='row'>
     {% for student in site.students %}
       <div class="col-lg-4 col-sm-6 text-center">
         <a href="{{student.url}}">
-          <img class="img-circle img-responsive img-center" src="{{site.baseurl}}/assets/images/students/{{student.image}}" alt="">
+          {% if student.image %}
+            <img class="img-circle img-responsive img-center" src="{{site.baseurl}}/assets/images/students/{{student.image}}" alt="">
+          {% else %}
+            <img class="img-circle img-responsive img-center" src="{{site.baseurl}}/assets/images/person.png" alt="">
+          {% endif %}
           <h3>{{ student.name }}</h3>
           <p>{{ student.project }}</p>
         </a>
@@ -24,13 +30,20 @@ layout: default
   </div>
 </div>
 
+<div class="page-header">
+  <h1>Supervisors</h1>
+</div>
+
 <div class='container-fluid'>
-  <h2>Supervisors</h2>
   <div class='row'>
     {% for supervisor in site.supervisors %}
       <div class="col-lg-4 col-sm-6 text-center">
         <a href="{{supervisor.url}}">
-          <img class="img-circle img-responsive img-center" src="{{site.baseurl}}/assets/images/supervisors/{{supervisor.image}}" alt="">
+          {% if supervisor.image %}
+            <img class="img-circle img-responsive img-center" src="{{site.baseurl}}/assets/images/supervisors/{{supervisor.image}}" alt="">
+          {% else %}
+            <img class="img-circle img-responsive img-center" src="{{site.baseurl}}/assets/images/person.png" alt="">
+          {% endif %}
           <h3>{{ supervisor.name }}</h3>
           <p>{{ supervisor.role }}</p>
         </a>
@@ -39,16 +52,31 @@ layout: default
   </div>
 </div>
 
+<div class="page-header">
+  <h1>Advisors</h1>
+</div>
+
 <div class='container-fluid'>
-  <h2>Advisors</h2>
   <div class='row'>
     {% for advisor in site.advisors %}
-      <div class="col-lg-4 col-sm-6 text-center">
-        <a href="{{advisor.url}}">
+      {% capture advisor-html %}
+        {% if advisor.image %}
           <img class="img-circle img-responsive img-center" src="{{site.baseurl}}/assets/images/advisors/{{advisor.image}}" alt="">
-          <h3>{{ advisor.name }}</h3>
-          <p>{{ advisor.role }}</p>
-        </a>
+        {% else %}
+          <img class="img-circle img-responsive img-center" src="{{site.baseurl}}/assets/images/person.png" alt="">
+        {% endif %}
+        <h3>{{ advisor.name }}</h3>
+        <p>{{ advisor.role }}</p>
+        <p>{{ advisor.institution }}</p>
+      {% endcapture %}
+      <div class="col-lg-4 col-sm-6 text-center">
+        {% if advisor.content != "" %}
+          <a href="{{advisor.url}}">
+            {{ advisor-html }}
+          </a>
+        {% else %}
+          {{ advisor-html }}
+        {% endif %}
       </div>
     {% endfor %}
   </div>

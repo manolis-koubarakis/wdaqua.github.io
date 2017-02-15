@@ -4,11 +4,15 @@ layout: default
 
 <div class="page-header row">
   <div class="col-sm-4 col-md-2">
-    <img class="img-circle img-responsive img-center" src="{{site.baseurl}}/assets/images/advisors/{{page.image}}">
+    {% if page.image %}
+      <img class="img-circle img-responsive img-center" src="{{site.baseurl}}/assets/images/advisors/{{page.image}}">
+    {% else %}
+      <img class="img-circle img-responsive img-center" src="{{site.baseurl}}/assets/images/person.png">
+    {% endif %}
   </div>
   <div class="col-sm-8 col-md-10">
-    <h1>{{ page.name }}</h1>
-    <h2>{{ page.role }}</h2>
+    <h1>{{ page.name }} <small>{{ page.role }}</small></h1>
+    <h2>{{ page.institution }}</h2>
   </div>
 </div>
 

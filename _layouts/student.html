@@ -1,10 +1,15 @@
 ---
 layout: default
+title: {{page.name}}
 ---
 
 <div class="page-header row">
   <div class="col-sm-4 col-md-2">
-    <img class="img-circle img-responsive img-center" src="{{site.baseurl}}/assets/images/students/{{page.image}}">
+    {% if page.image %}
+      <img class="img-circle img-responsive img-center" src="{{site.baseurl}}/assets/images/students/{{page.image}}">
+    {% else %}
+      <img class="img-circle img-responsive img-center" src="{{site.baseurl}}/assets/images/person.png">
+    {% endif %}
   </div>
   <div class="col-sm-8 col-md-10">
     <h1>ESR{{page.esr}}: {{ page.name }}</h1>

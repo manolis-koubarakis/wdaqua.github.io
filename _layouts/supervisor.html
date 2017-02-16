@@ -18,16 +18,16 @@ layout: default
   </div>
 
   <div class="row">
-    <div class="col-xs-12 col-md-8">
+    <div class="col-xs-12 col-md-7">
       {{ content }}
     </div>
-    <div class="col-xs-8 col-md-2">
+    <div class="col-xs-8 col-md-3">
       <dl>
         <dt>Students:</dt>
         <dd>
           <ul class="list-unstyled">
             {% for student in page.students %}
-              <li><a href="{{site.baseurl}}/students/{{ student | slugify }}.html">{{ student }}</a></li>
+              <li><a href="{{site.baseurl}}/students/{{ student | slugify }}/">{{ student }}</a></li>
             {% endfor %}
           </ul>
         </dd>
@@ -54,7 +54,7 @@ layout: default
       {% endif %}
     </div>
     <div class="col-xs-4 col-md-2">
-      <img src="{{site.baseurl}}/assets/images/logos/{{page.institution}}.png">
+      <img class="img-responsive img-center" src="{{site.baseurl}}/assets/images/logos/{{page.institution}}.png">
     </div>
   </div>
 </div>

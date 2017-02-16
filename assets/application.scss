@@ -103,6 +103,18 @@ a:hover {
   min-height: 250px;
 }
 
+.news img {
+  max-width: 80%;
+}
+
+article {
+  h2 {
+    font-size: 1.2em;
+  }
+
+  border-bottom: thin solid $gray-lighter;
+}
+
 .map, .viz {
   display: block;
   margin-left: auto;

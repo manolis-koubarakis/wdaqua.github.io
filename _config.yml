@@ -10,9 +10,9 @@ defaults:
 
   - scope:
       type: posts
-      path: blog
+      path: news
     values:
-      layout: blost
+      layout: news
 
 permalink: pretty
 # baseurl: https://wdaqua.github.io

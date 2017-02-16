@@ -1,2 +1,136 @@
 ---
+- number: D1.1
+  title: Supervisory Board of the Network
+  wp: WP1
+  type: Report
+  dissemination-level: Public
+  due-date: M2
+  link: "/people#advisors"
+- number: D1.2
+  title: Internal forum and source repositories
+  wp: WP1
+  type: Other
+  dissemination-level: Confidential
+  due-date: M6
+- number: D1.3
+  title: "Ethics: delivery of documents and ethical report"
+  wp: WP1
+  type: Report
+  dissemination-level: Confidential
+  due-date: M6
+- number: D1.4
+  title: Report on recruitment completion
+  wp: WP1
+  type: Report
+  dissemination-level: Public
+  due-date: M8
+- number: D1.5
+  title: Progress Report
+  wp: WP1
+  type: Report
+  dissemination-level: Confidential
+  due-date: M13
+- number: D1.6
+  title: Draft periodic report
+  wp: WP1
+  type: Report
+  dissemination-level: Confidential
+  due-date: M24
+- number: D1.7
+  title: Mid-term Review Meeting
+  wp: WP1
+  type: Other
+  dissemination-level: Confidential
+  due-date: M26
+- number: D1.8
+  title: Final periodic report
+  wp: WP1
+  type: Report
+  dissemination-level: Confidential
+  due-date: M48
+- number: D2.1
+  title: Training curriculum
+  wp: WP2
+  type: Report
+  dissemination-level: Public
+  due-date: M3
+- number: D2.2
+  title: Career development plans for all ESRs
+  wp: WP2
+  type: Report
+  dissemination-level: Confidential
+  due-date: M12
+- number: D2.3
+  title: Award of doctoral degrees
+  wp: WP2
+  type: Report
+  dissemination-level: Public
+  due-date: M45
+- number: D3.1
+  title: Public web portal
+  wp: WP3
+  type: Websites, patents filling, etc.
+  dissemination-level: Public
+  due-date: M4
+  link: "http://wdaqua.eu/"
+- number: D3.2
+  title: EDF workshop presentations
+  wp: WP3
+  type: Report
+  dissemination-level: Public
+  due-date: M37
+- number: D4.1
+  title: OpenQA specification and reference implementation
+  wp: WP4
+  type: Report
+  dissemination-level: Public
+  due-date: M16
+- number: D4.2
+  title: OpenQA core platform prefinal
+  wp: WP4
+  type: Report
+  dissemination-level: Public
+  due-date: M35
+- number: D5.1
+  title: Final field evaluation reports
+  wp: WP5
+  type: Report
+  dissemination-level: Public
+  due-date: M40
+- number: D6.1
+  title: Web/data science state of the art survey
+  wp: WP6
+  type: Report
+  dissemination-level: Public
+  due-date: M9
+- number: D6.2
+  title: Results transferability report
+  wp: WP6
+  type: Report
+  dissemination-level: Public
+  due-date: M40
+- number: D7.1
+  title: OpenQA reference implementation documentation
+  wp: WP7
+  type: Report
+  dissemination-level: Public
+  due-date: M16
+- number: D7.2
+  title: OpenQA demonstrator
+  wp: WP7
+  type: Demonstrator
+  dissemination-level: Public
+  due-date: M39
+- number: D7.3
+  title: Report on licensing/pricing model
+  wp: WP7
+  type: Report
+  dissemination-level: Public
+  due-date: M46
+- number: D7.4
+  title: Report on exploitation potential
+  wp: WP7
+  type: Report
+  dissemination-level: Confidential
+  due-date: M47
 ---

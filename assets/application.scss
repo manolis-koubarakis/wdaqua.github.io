@@ -99,6 +99,10 @@ a:hover {
   background-color: $gray-lighter;
 }
 
+.publication {
+  min-height: 250px;
+}
+
 .map, .viz {
   display: block;
   margin-left: auto;

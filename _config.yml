@@ -24,3 +24,5 @@ collections:
     output: true
   advisors:
     output: true
+  events:
+    output: false

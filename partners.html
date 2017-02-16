@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<div class='container'>
+  <div class="page-header">
+    <h1>Research partners</h1>
+  </div>
+  <div class='row'>
+    {% for partner in site.data.research-partners %}
+      <div class="col-lg-3 col-md-6 text-center">
+        <a href="{{partner.url}}">
+          <img class="img-responsive img-center" src="{{site.baseurl}}/assets/images/logos/{{partner.logo}}" alt="">
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+<div class='container'>
+  <div class="page-header">
+    <h1>Industrial partners</h1>
+  </div>
+  <div class='row'>
+    {% for partner in site.data.industrial-partners %}
+      <div class="col-lg-4 col-sm-6 text-center">
+        <a href="{{partner.url}}">
+          <img class="img-responsive img-center" src="{{site.baseurl}}/assets/images/logos/{{partner.logo}}" alt="">
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+</div>

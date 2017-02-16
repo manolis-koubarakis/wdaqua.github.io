@@ -3,84 +3,86 @@ layout: default
 title: {{page.name}}
 ---
 
-<div class="page-header row">
-  <div class="col-sm-4 col-md-2">
-    {% if page.image %}
-      <img class="img-circle img-responsive img-center" src="{{site.baseurl}}/assets/images/students/{{page.image}}">
-    {% else %}
-      <img class="img-circle img-responsive img-center" src="{{site.baseurl}}/assets/images/person.png">
-    {% endif %}
+<div class="container">
+  <div class="page-header row">
+    <div class="col-sm-4 col-md-2">
+      {% if page.image %}
+        <img class="img-circle img-responsive img-center" src="{{site.baseurl}}/assets/images/students/{{page.image}}">
+      {% else %}
+        <img class="img-circle img-responsive img-center" src="{{site.baseurl}}/assets/images/person.png">
+      {% endif %}
+    </div>
+    <div class="col-sm-8 col-md-10">
+      <h1>ESR{{page.esr}}: {{ page.name }}</h1>
+      <h2>{{ page.project }}</h2>
+    </div>
   </div>
-  <div class="col-sm-8 col-md-10">
-    <h1>ESR{{page.esr}}: {{ page.name }}</h1>
-    <h2>{{ page.project }}</h2>
-  </div>
-</div>
 
-<div class="row">
-  <div class="col-xs-12 col-md-8">
-    {{ content }}
+  <div class="row">
+    <div class="col-xs-12 col-md-8">
+      {{ content }}
+    </div>
+    <div class="col-xs-8 col-md-2">
+      <dl>
+        <dt>Started:</dt>
+        <dd>{{ page.start-date }}</dd>
+        <dt>Supervisors:</dt>
+        <dd>
+          <ul class="list-unstyled">
+            {% for supervisor in page.supervisors %}
+              <li><a href="{{site.baseurl}}/supervisors/{{ supervisor | slugify }}.html">{{ supervisor }}</a></li>
+            {% endfor %}
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div class="col-xs-4 col-md-2">
+      <img src="{{site.baseurl}}/assets/images/logos/{{page.host}}.png">
+    </div>
   </div>
-  <div class="col-xs-8 col-md-2">
-    <dl>
-      <dt>Started:</dt>
-      <dd>{{ page.start-date }}</dd>
-      <dt>Supervisors:</dt>
-      <dd>
-        <ul class="list-unstyled">
-          {% for supervisor in page.supervisors %}
-            <li><a href="{{site.baseurl}}/supervisors/{{ supervisor | slugify }}.html">{{ supervisor }}</a></li>
-          {% endfor %}
-        </ul>
-      </dd>
-    </dl>
-  </div>
-  <div class="col-xs-4 col-md-2">
-    <img src="{{site.baseurl}}/assets/images/logos/{{page.host}}.png">
-  </div>
-</div>
 
-<div class="row">
-  <div class="col-md-8 col-xs-12">
-    {% if page.publications %}
-      <h2>Publications</h2>
-      {% for publication in page.publications %}
-        {% assign pub = site.data.publications[publication] %}
-        <p>
-          {{ pub.citation }}
-          {% if pub.url %}
-            <a href="{{pub.url}}">URL</a>
-          {% endif %}
-          {% if pub.pdf %}
-            <a href="{{pub.pdf}}">PDF</a>
-          {% endif %}
-          {% if pub.poster %}
-            (<a href="{{pub.poster}}">poster</a>)
-          {% endif %}
-        </p>
-      {% endfor %}
-    {% endif %}
-  </div>
-  <div class="col-md-4 col-xs-12">
-    {% if page.email %}
-      <a href="mailto:{{page.email}}">
-        <img src="{{site.baseurl}}/assets/images/email.png" />
-      </a>
-    {% endif %}
-    {% if page.homepage %}
-      <a href="{{page.homepage}}">
-        <img src="{{site.baseurl}}/assets/images/home.png" />
-      </a>
-    {% endif %}
-    {% if page.twitter %}
-      <a href="https://twitter.com/{{page.twitter}}">
-        <img src="{{site.baseurl}}/assets/images/twitter.png" />
-      </a>
-    {% endif %}
-    {% if page.github %}
-      <a href="https://github.com/{{page.github}}">
-        <img src="{{site.baseurl}}/assets/images/github.png" />
-      </a>
-    {% endif %}
+  <div class="row">
+    <div class="col-md-8 col-xs-12">
+      {% if page.publications %}
+        <h2>Publications</h2>
+        {% for publication in page.publications %}
+          {% assign pub = site.data.publications[publication] %}
+          <p>
+            {{ pub.citation }}
+            {% if pub.url %}
+              <a href="{{pub.url}}">URL</a>
+            {% endif %}
+            {% if pub.pdf %}
+              <a href="{{pub.pdf}}">PDF</a>
+            {% endif %}
+            {% if pub.poster %}
+              (<a href="{{pub.poster}}">poster</a>)
+            {% endif %}
+          </p>
+        {% endfor %}
+      {% endif %}
+    </div>
+    <div class="col-md-4 col-xs-12">
+      {% if page.email %}
+        <a href="mailto:{{page.email}}">
+          <img src="{{site.baseurl}}/assets/images/email.png" />
+        </a>
+      {% endif %}
+      {% if page.homepage %}
+        <a href="{{page.homepage}}">
+          <img src="{{site.baseurl}}/assets/images/home.png" />
+        </a>
+      {% endif %}
+      {% if page.twitter %}
+        <a href="https://twitter.com/{{page.twitter}}">
+          <img src="{{site.baseurl}}/assets/images/twitter.png" />
+        </a>
+      {% endif %}
+      {% if page.github %}
+        <a href="https://github.com/{{page.github}}">
+          <img src="{{site.baseurl}}/assets/images/github.png" />
+        </a>
+      {% endif %}
+    </div>
   </div>
 </div>

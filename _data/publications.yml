@@ -4,7 +4,7 @@ Piscopo2017:
   citation: "Wikidatians Are Born: Paths to Full Participation in a Collaborative Structured Knowledge Base. Alessandro Piscopo, Christopher Phethean, Elena Simperl. HICSS-50. 2017 (to appear)"
 Singh2016a:
   year: 2016
-  citation: "Towards a Message-Driven Vocabulary for Promoting the Interoperability of Question Answering Systems. Kuldeep Singh, Andreas Both, Dennis Diefenbach, Saeedeh Shekarpour. IEEE ICSC 2016. URL PDF"
+  citation: "Towards a Message-Driven Vocabulary for Promoting the Interoperability of Question Answering Systems. Kuldeep Singh, Andreas Both, Dennis Diefenbach, Saeedeh Shekarpour. IEEE ICSC 2016."
   url: http://ieeexplore.ieee.org/xpl/freeabs_all.jsp?arnumber=7439371&abstractAccess=no&userType=inst
   pdf: http://wdaqua.eu/wp-content/uploads/PID4045687.pdf
 Both2016:
@@ -66,3 +66,4 @@ Lange2015:
   citation: "The WDAqua ITN – Answering Questions using Web Data. Christoph Lange, Saeedeh Shekarpour and Sören Auer. 12th ESWC 2015, EU Project Networking session."
   pdf: http://arxiv.org/pdf/1506.04094v1.pdf
   poster: http://eis.iai.uni-bonn.de/upload/paper/ESWC_Project_Networking_WDAqua_poster.pdf
+---

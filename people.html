@@ -8,11 +8,10 @@ redirect_from:
 layout: default
 ---
 
-<div class="page-header">
-  <h1>Students</h1>
-</div>
-
-<div class='container-fluid'>
+<div class='container'>
+  <div class="page-header">
+    <h1>Students</h1>
+  </div>
   <div class='row'>
     {% for student in site.students %}
       <div class="col-lg-4 col-sm-6 text-center">
@@ -30,11 +29,10 @@ layout: default
   </div>
 </div>
 
-<div class="page-header">
-  <h1>Supervisors</h1>
-</div>
-
-<div class='container-fluid'>
+<div class='container'>
+  <div class="page-header">
+    <h1>Supervisors</h1>
+  </div>
   <div class='row'>
     {% for supervisor in site.supervisors %}
       <div class="col-lg-4 col-sm-6 text-center">
@@ -52,11 +50,10 @@ layout: default
   </div>
 </div>
 
-<div class="page-header">
-  <h1>Advisors</h1>
-</div>
-
-<div class='container-fluid'>
+<div class='container'>
+  <div class="page-header">
+    <h1>Advisors</h1>
+  </div>
   <div class='row'>
     {% for advisor in site.advisors %}
       {% capture advisor-html %}

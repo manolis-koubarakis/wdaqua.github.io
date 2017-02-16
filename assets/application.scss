@@ -95,6 +95,10 @@ a:hover {
   }
 }
 
+.contrast {
+  background-color: $gray-lighter;
+}
+
 .map, .viz {
   display: block;
   margin-left: auto;

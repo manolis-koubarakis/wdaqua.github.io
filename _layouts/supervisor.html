@@ -2,57 +2,59 @@
 layout: default
 ---
 
-<div class="page-header row">
-  <div class="col-sm-4 col-md-2">
-    {% if page.image %}
-      <img class="img-circle img-responsive img-center" src="{{site.baseurl}}/assets/images/supervisors/{{page.image}}">
-    {% else %}
-      <img class="img-circle img-responsive img-center" src="{{site.baseurl}}/assets/images/person.png">
-    {% endif %}
+<div class="container">
+  <div class="page-header row">
+    <div class="col-sm-4 col-md-2">
+      {% if page.image %}
+        <img class="img-circle img-responsive img-center" src="{{site.baseurl}}/assets/images/supervisors/{{page.image}}">
+      {% else %}
+        <img class="img-circle img-responsive img-center" src="{{site.baseurl}}/assets/images/person.png">
+      {% endif %}
+    </div>
+    <div class="col-sm-8 col-md-10">
+      <h1>{{ page.name }}</h1>
+      <h2>{{ page.role }}</h2>
+    </div>
   </div>
-  <div class="col-sm-8 col-md-10">
-    <h1>{{ page.name }}</h1>
-    <h2>{{ page.role }}</h2>
-  </div>
-</div>
 
-<div class="row">
-  <div class="col-xs-12 col-md-8">
-    {{ content }}
-  </div>
-  <div class="col-xs-8 col-md-2">
-    <dl>
-      <dt>Students:</dt>
-      <dd>
-        <ul class="list-unstyled">
-          {% for student in page.students %}
-            <li><a href="{{site.baseurl}}/students/{{ student | slugify }}.html">{{ student }}</a></li>
-          {% endfor %}
-        </ul>
-      </dd>
-    </dl>
-    {% if page.email %}
-      <a href="mailto:{{page.email}}">
-        <img src="{{site.baseurl}}/assets/images/email.png" />
-      </a>
-    {% endif %}
-    {% if page.homepage %}
-      <a href="{{page.homepage}}">
-        <img src="{{site.baseurl}}/assets/images/home.png" />
-      </a>
-    {% endif %}
-    {% if page.twitter %}
-      <a href="https://twitter.com/{{page.twitter}}">
-        <img src="{{site.baseurl}}/assets/images/twitter.png" />
-      </a>
-    {% endif %}
-    {% if page.github %}
-      <a href="https://github.com/{{page.github}}">
-        <img src="{{site.baseurl}}/assets/images/github.png" />
-      </a>
-    {% endif %}
-  </div>
-  <div class="col-xs-4 col-md-2">
-    <img src="{{site.baseurl}}/assets/images/logos/{{page.institution}}.png">
+  <div class="row">
+    <div class="col-xs-12 col-md-8">
+      {{ content }}
+    </div>
+    <div class="col-xs-8 col-md-2">
+      <dl>
+        <dt>Students:</dt>
+        <dd>
+          <ul class="list-unstyled">
+            {% for student in page.students %}
+              <li><a href="{{site.baseurl}}/students/{{ student | slugify }}.html">{{ student }}</a></li>
+            {% endfor %}
+          </ul>
+        </dd>
+      </dl>
+      {% if page.email %}
+        <a href="mailto:{{page.email}}">
+          <img src="{{site.baseurl}}/assets/images/email.png" />
+        </a>
+      {% endif %}
+      {% if page.homepage %}
+        <a href="{{page.homepage}}">
+          <img src="{{site.baseurl}}/assets/images/home.png" />
+        </a>
+      {% endif %}
+      {% if page.twitter %}
+        <a href="https://twitter.com/{{page.twitter}}">
+          <img src="{{site.baseurl}}/assets/images/twitter.png" />
+        </a>
+      {% endif %}
+      {% if page.github %}
+        <a href="https://github.com/{{page.github}}">
+          <img src="{{site.baseurl}}/assets/images/github.png" />
+        </a>
+      {% endif %}
+    </div>
+    <div class="col-xs-4 col-md-2">
+      <img src="{{site.baseurl}}/assets/images/logos/{{page.institution}}.png">
+    </div>
   </div>
 </div>

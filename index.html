@@ -1,50 +1,34 @@
 ---
 layout: default
-head: <script src="//unpkg.com/masonry-layout@4.1/dist/masonry.pkgd.min.js"></script>
 ---
 
-<div class="page-header">
-  <h1>Answering Questions using Web Data</h1>
+<div class="container">
+  <div class="page-header">
+    <h1>Answering Questions using Web Data</h1>
+  </div>
+
+	<p>WDAqua (Answering Questions using Web Data) is a <a href="http://ec.europa.eu/research/mariecurieactions/">Marie Skłodowska-Curie Innovative Training Network (ITN)</a>.</p>
+  <p>Smart infrastructures and citizens’ participation in the digital society are increasingly data-driven. Sharing, connecting, managing, analysing and understanding data on the Web will enable better services for citizens, communities and industry. However, turning web data into successful services for the public and private sector requires skilled web and data scientists, and it still requires further research.</p>
+  <p>WDAqua aims at advancing the state of the art by intertwining <strong>training</strong>, <strong>research</strong> and <strong>innovation</strong> efforts, centred around data-driven question answering. Question answering is immediately useful to a wide audience of end users, and we will demonstrate this in settings including e-commerce, public sector information, publishing and smart cities. Steps to answering a question are (1) understanding a spoken question, (2) analysing the question’s text, (3) finding data to answer the question, and (4) presenting the answer(s). Every individual research project in WDAqua connects at least two of these steps.</p>
 </div>
 
-<div class='container-fluid'>
-  <div class='grid'>
-    <div class='grid-sizer col-xs-6 col-sm-6 col-md-1'></div>
+<div class='container'>
+  <div class="page-header">
+    <h1>Students</h1>
+  </div>
+  <div class='row'>
     {% for student in site.students %}
-      <div class='col-xs-12 col-sm-12 col-md-4 grid-item'>
-        <div class='grid-item-content story'>
-          <div class="module-img">
-            <img src="{{site.baseurl}}/assets/images/students/{{student.image}}">
-          </div>
-          <h2 class='module-heading'>
-            <a href="{{student.url}}">{{ student.title }}</a>
-          </h2>
-          <p class='module-subheading'>
-            {{ student.content }}
-          </p>
-        </div>
+      <div class="col-lg-4 col-sm-6 text-center">
+        <a href="{{student.url}}">
+          {% if student.image %}
+            <img class="img-circle img-responsive img-center" src="{{site.baseurl}}/assets/images/students/{{student.image}}" alt="">
+          {% else %}
+            <img class="img-circle img-responsive img-center" src="{{site.baseurl}}/assets/images/person.png" alt="">
+          {% endif %}
+          <h3>{{ student.name }}</h3>
+          <p>{{ student.project }}</p>
+        </a>
       </div>
     {% endfor %}
   </div>
 </div>
-
-<script>
-$('.grid').masonry({
-  itemSelector: '.grid-item',
-  columnWidth: '.grid-sizer',
-  percentPosition: true,
-  stagger: 30
-})
-
-colours = [
-  'rgba(0, 24, 153,1)',
-  'rgba(223, 159, 0,1)',
-  'rgba(223, 116, 0,1)'
-]
-
-count = 0
-limit = colours.length
-$('.story').each(function(i, story) {
-  $(this).attr('style', 'background-color: ' + colours[count++ % limit])
-})
-</script>

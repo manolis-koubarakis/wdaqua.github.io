@@ -2,6 +2,7 @@
 layout: student
 esr: 5
 name: Hady El-Sahar
+image: hadyimg.jpg
 project: Extraction of New Information on the Web using Relation Extraction and Discovery
 host: st-etienne
 start-date: 2015-07-08

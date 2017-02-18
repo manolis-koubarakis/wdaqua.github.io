@@ -2,6 +2,7 @@
 layout: student
 esr: 1
 name: Kemele M. Endris
+image: kemele.jpg
 project: Making Datasets Fit for Question Answering
 host: bonn
 start-date: 2015-08-17

@@ -2,6 +2,7 @@
 layout: student
 esr: 6
 name: Denis Lukovnikov
+image: denis.gif
 project: Translating Natural Language Questions into Queries
 host: bonn
 start-date: 2015-07-15

@@ -2,6 +2,7 @@
 layout: student
 esr: 11
 name: Emilia Kacprzak
+image: KacprzakEmilia.png
 project: Dataset Profiling, Summarization, and Ranking
 host: odi
 start-date: 2015-11-16

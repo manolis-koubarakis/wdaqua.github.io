@@ -2,6 +2,7 @@
 layout: student
 esr: 9
 name: Ashwini Jaya Kumar
+image: Ashwini.jpg
 project: Spoken Question Recognition and Interpretation
 host: fraunhofer
 start-date: 2015-08-15

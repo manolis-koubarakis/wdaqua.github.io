@@ -2,6 +2,7 @@
 layout: student
 esr: 14
 name: Alessandro Piscopo
+image: alessandro.jpg
 project: Facilitating Productive Serendipity in QA Systems through Analysis of Community Processes and Data Quality in Collaborative Knowledge Graphs
 host: soton
 start-date: 2015-04-13

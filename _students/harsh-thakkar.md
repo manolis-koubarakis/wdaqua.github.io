@@ -2,6 +2,7 @@
 layout: student
 esr: 2
 name: Harsh Thakkar
+image: Harsh.jpg
 project: Quality driven Dataset Discovery and Retrieval
 host: bonn
 start-date: 2015-07-15

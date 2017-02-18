@@ -2,6 +2,7 @@
 layout: student
 esr: 10
 name: Pavlos Vougiouklis
+image: Pavlos.png
 project: Data-driven Verbalisation and Natural Language Synthesis using Neural Networks
 host: soton
 start-date: 2015-02-16

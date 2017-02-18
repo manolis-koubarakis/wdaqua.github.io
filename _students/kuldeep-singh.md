@@ -2,6 +2,7 @@
 layout: student
 esr: 8
 name: Kuldeep Singh
+image: Kuldeep.jpg
 project: Cloud Based Open Question Answering Architecture
 host: fraunhofer
 start-date: 2015-08-15

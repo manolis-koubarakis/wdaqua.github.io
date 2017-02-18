@@ -2,6 +2,7 @@
 layout: student
 esr: 4
 name: José M. Giménez-García
+image: José.jpg
 project: Trust and Provenance in the Web of Data
 host: st-etienne
 start-date: 2015-10-05

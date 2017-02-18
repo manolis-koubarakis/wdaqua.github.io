@@ -18,7 +18,7 @@ layout: default
   </div>
   <div class='row'>
     {% for student in site.students %}
-      <div class="col-lg-4 col-sm-6 text-center">
+      <div class="person col-lg-4 col-sm-6 text-center">
         <a href="{{student.url}}">
           {% if student.image %}
             <img class="img-circle img-responsive img-center" src="{{site.baseurl}}/assets/images/students/{{student.image}}" alt="">

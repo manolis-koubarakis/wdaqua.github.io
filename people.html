@@ -67,7 +67,11 @@ layout: default
         <p>{{ advisor.institution }}</p>
       {% endcapture %}
       <div class="person col-lg-4 col-sm-6 text-center">
-        {% if advisor.content != "" %}
+        {% if advisor.homepage %}
+          <a href="{{advisor.homepage}}">
+            {{ advisor-html }}
+          </a>
+        {% elsif advisor.content.length > 20 %}
           <a href="{{advisor.url}}">
             {{ advisor-html }}
           </a>

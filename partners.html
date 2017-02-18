@@ -4,7 +4,7 @@ layout: default
 
 <div class='container'>
   <div class="page-header">
-    <h1>Research partners</h1>
+    <h1>Research beneficiaries</h1>
   </div>
   <div class='row'>
     {% for partner in site.data.research-partners %}
@@ -19,15 +19,40 @@ layout: default
 
 <div class='container'>
   <div class="page-header">
-    <h1>Industrial partners</h1>
+    <h1>Industrial beneficiaries</h1>
   </div>
   <div class='row'>
     {% for partner in site.data.industrial-partners %}
-      <div class="col-lg-4 col-sm-6 text-center">
+      <div class="col-lg-3 col-sm-6 text-center">
         <a href="{{partner.url}}">
           <img class="img-responsive img-center" src="{{site.baseurl}}/assets/images/logos/{{partner.logo}}" alt="">
         </a>
       </div>
     {% endfor %}
   </div>
+</div>
+
+<div class='container'>
+  <div class="page-header">
+    <h1>Partner organisations</h1>
+  </div>
+  {% assign rows = site.data.partners.size | divided_by: 4 %}
+  {% for row in (0..rows) %}
+    {% assign offset = row | times: 4 %}
+    <div class='row'>
+      {% for partner in site.data.partners offset:offset limit:4 %}
+        <div class="col-lg-3 col-sm-6 text-center">
+          {% if partner.logo %}
+            <a href="{{partner.url}}">
+              <img class="img-responsive img-center" src="{{site.baseurl}}/assets/images/logos/{{partner.logo}}" alt="">
+            </a>
+          {% else %}
+            <a href="{{partner.url}}">
+              <h3>{{partner.name}}</h3>
+            </a>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  {% endfor %}
 </div>

@@ -82,17 +82,6 @@ Advisor pages are kept as Markdown files within the [`_advisors`](https://github
 | github | your github username |
 
 
-## Events
-
-Event pages are kept as Markdown files within the [`_events`](https://github.com/WDAqua/wdaqua.github.io/tree/master/_events) directory. Add new Markdown files for new events. The content is a description of the event. Recognised metadata is:
-
-| property | description |
-|-|-|
-| title | title of the event |
-| date | date of the event |
-| link | external description of or home page for the event |
-
-
 ## News
 
 News/blog pages are kept as Markdown files within the [`news/_posts`](https://github.com/WDAqua/wdaqua.github.io/tree/master/news/_posts) directory. Add new files for new items of news, using filenames in the form `yyyy-mm-dd-title`. Recognised metadata is:

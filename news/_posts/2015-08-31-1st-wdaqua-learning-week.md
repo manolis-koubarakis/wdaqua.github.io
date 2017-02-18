@@ -1,5 +1,4 @@
 ---
-title: 1st Learning Week
-date: 2015-08-31
+title: 1st WDAqua Learning Week
 ---
 From **31 August to 4 September 2015**, the first Learning Week of the WDAqua students was held in Saint-Étienne in France in conjunction to the [Web Intelligence summer school](https://wiss.univ-st-etienne.fr/) concentrating on the topics as publishing of Web Data, understanding and analysing a question in natural language, finding data to answer the question, justifying the answer and presenting the answers. In additions to keynote talks and tutorials, students were in involved in a challenge in order to understand and practice the question answering subtasks. Very soon the presented of the summer school will uploaded [here](https://wiss.univ-st-etienne.fr/program/). One of the very interesting sessions of this event was **intercultural management** session, as how we can collaborate in a group including people from different cultures and backgrounds. After the summer school, the second WDAqua project meeting took place, where all the partners discussed the running issues on the WDAqua project.

@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /events/
 ---
 
 <div class='container'>
@@ -35,6 +37,9 @@
           </div>
         {% else %}
           {{ post.content }}
+        {% endif %}
+        {% if post.link %}
+          <p>(<a href="{{post.link}}">read more</a>)</p>
         {% endif %}
       {% endif %}
     </article>

@@ -8,11 +8,12 @@
   {% assign events = site.events | sort: 'date' %}
   {% assign events = events | reverse %}
   {% for event in events %}
-    <p>
+    <article>
+      <h2>{{ event.title }}</h2>
       {{ event.content }}
       {% if event.link %}
-        (<a href="{{event.link}}">read more</a>)
+        <p>(<a href="{{event.link}}">read more</a>)</p>
       {% endif %}
-    </p>
+    </article>
   {% endfor %}
 </div>

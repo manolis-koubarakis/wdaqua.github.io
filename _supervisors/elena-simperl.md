@@ -2,6 +2,7 @@
 layout: supervisor
 name: Elena Simperl
 role: TODO
+image: elena.JPG
 institution: soton
 students:
   - Alessandro Piscopo

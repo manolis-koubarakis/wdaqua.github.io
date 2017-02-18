@@ -2,6 +2,7 @@
 layout: supervisor
 name: Ioanna Lytra
 role: TODO
+image: Ioanna Lytra.jpg
 institution: bonn
 students:
   - Kemele M Endris

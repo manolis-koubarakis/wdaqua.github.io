@@ -16,7 +16,7 @@ github: laurakoesten
 publications:
   - Koesten2016
   - Kacprzak2016
-  - Koesten2016b
+  - Koesten2017
 
 ---
 The use of structured and semi structured data as a source of information and as a basis for decision making processes, alongside other sources, is not yet fully realised. To discover, filter, and rank within the Web of data, different technologies and principles opposed to the traditional Web are needed. With the increasing efforts to use web data for information retrieval, challenges connected to human interaction with data arise. Published data is heterogeneous concerning formats, structures, licenses, portals (storage), metadata, quality, size; and therefore not always easy to find. The discovery of data and of datasets can be difficult for non-technical users, but can present challenges also to experts. When looking at the whole interaction process of the user with the data, numerous factors potentially contribute to the success of a user's task. The user can be a person involved in constructing or designing adequate tools, as well as a person trying to “get an answer to a question”.

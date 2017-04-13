@@ -1,7 +1,6 @@
 - name: Wolters Kluwer Strategy and Innovation
   logo: wolters-kluwer.png
   url: http://wolterskluwer.com/
-- name: Data Publica
 - name: Antidot
   logo: antidot.png
   url: http://www.antidot.net/
@@ -11,3 +10,9 @@
 - name: Mercateo
   logo: mercateo.png
   url: https://www.mercateo.com
+- name: Data Publica
+  logo: datapub.png
+  url: https://www.data-publica.com/
+- name: Wikimedia Deutschland
+  logo: wikimedia.png
+  url: https://www.wikimedia.de/

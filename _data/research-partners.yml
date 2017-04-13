@@ -1,8 +1,12 @@
 - name: University of Bonn
   logo: bonn.png
+  url: https://www.uni-bonn.de/
 - name: University of Southampton
   logo: soton.png
+  url: http://www.southampton.ac.uk/
 - name: University Jean Monnet Saint Étienne
   logo: st-etienne.png
+  url: https://www.univ-st-etienne.fr/
 - name: University of Athens
   logo: athens.png
+  url: http://en.uoa.gr/

@@ -17,7 +17,7 @@ redirect_from:
               {{ post.summary | markdownify }}
             </div>
             <div class="col-md-6">
-              <img src="{{post.image}}" />
+              <img src="{{site.baseurl}}/assets/images/news/{{post.image}}" />
             </div>
           </div>
         {% else %}
@@ -32,7 +32,7 @@ redirect_from:
               {{ post.content }}
             </div>
             <div class="col-md-6">
-              <img class="img-responsive" src="{{post.image}}" />
+              <img class="img-responsive" src="{{site.baseurl}}/assets/images/news/{{post.image}}" />
             </div>
           </div>
         {% else %}

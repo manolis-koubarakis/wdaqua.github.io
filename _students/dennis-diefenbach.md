@@ -2,6 +2,7 @@
 layout: student
 esr: 7
 name: Dennis Diefenbach
+image: dennis.png
 project: Ontology based Question Answering
 host: st-etienne
 start-date: 2015-06-01

@@ -8,7 +8,7 @@ layout: default
   </div>
   {{ page.summary | markdownify }}
   {% if page.image %}
-    <img class="img-responsive img-center" src="{{page.image}}" />
+    <img class="img-responsive img-center" src="{{site.baseurl}}/assets/images/news/{{page.image}}" />
   {% endif %}
   {{ content }}
   {% if page.link %}

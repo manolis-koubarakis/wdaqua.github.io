@@ -1,10 +1,13 @@
 ---
 layout: supervisor
 name: Manolis Koubarakis
-role: TODO
+role: supervisor
 institution: athens
 students:
   - Dharmen Punjani
   - Niousha Hormozi
+  - Negar Yaghoubihamraz
 ---
-TODO
+homepage: http://cgi.di.uoa.gr/~koubarak/
+email: koubarak@di.uoa.gr
+
